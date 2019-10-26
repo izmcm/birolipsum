@@ -10,7 +10,7 @@ A parte mais legal é que você não precisa instalar nada!
 
 Basta entrar em [Birolipsum](https://izmcm.github.io/birolipsum/), colocar a quantidade de parágrafos que você quer e clicar em **Gerar**.
 
-#### Mais fácil de lidar que o governo, né?
+**Mais fácil de lidar que o governo, né?**
 
 ## Quer ajudar?
 ### Pull Requests:
