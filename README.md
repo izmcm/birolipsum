@@ -1,6 +1,6 @@
 # Birolipsum
 
-Birolipsum é (mais) um gerador de Lorem Ipsum com citações do (infelizmente) presidente do Brasil, Jair Bolsonaro (ou Biroliro para os íntimos).
+Birolipsum é um gerador de Lorem Ipsum com citações do (infelizmente) presidente do Brasil, Jair Bolsonaro (ou Biroliro para os íntimos).
 
 #### Mas, antes de tudo, o que é Lorem Ipsum?
 "[...] lorem ipsum é um texto utilizado para preencher o espaço de texto em publicações (jornais, revistas, e sites) e testar aspectos visuais (cores, fontes etc.), com a finalidade de verificar o layout, a tipografia e formatação antes de utilizar conteúdo real." - [Wikipédia](https://pt.wikipedia.org/wiki/Lorem_ipsum)
