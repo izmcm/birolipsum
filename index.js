@@ -30,13 +30,19 @@ $(document).ready(function() {
 
         var i = 0
         var text = ""
-        var numP = tSize
+        var numP = $(".numP").val()
+        console.log(numP)
 
         while(numP > 0) {
             var paragraph = ""
             while(paragraph.length < pSize) {
                 paragraph += quotes[i] + " "
                 i++
+
+                if(i >= quotes.length){
+                    i = 0
+                    shuffle(quotes)
+                }
             }
             text += paragraph + "\n\n"
             numP--
