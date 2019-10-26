@@ -1,6 +1,5 @@
 $(document).ready(function() {
     let pSize = 500
-    let tSize = 2
     var quotes = []
 
     $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset.txt', function(data) {
