@@ -2,7 +2,7 @@ $(document).ready(function() {
     let pSize = 500
     var quotes = []
 
-    $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset.txt', function(data) {
+    $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset/dataset.txt', function(data) {
         var lines = data.split("\n");
         for (var i = 0, len = lines.length; i < len; i++) {
             quotes.push(lines[i].replace(/(\r\n|\n|\r|\\n)/gm, ''))
