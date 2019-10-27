@@ -1,0 +1,16 @@
+p {
+	text-align: left;
+}
+
+.container {
+  display: flex; /* or inline-flex */
+}
+
+.vertical-center {
+  min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 90vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+

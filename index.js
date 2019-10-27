@@ -29,7 +29,7 @@ $(document).ready(function() {
 
         var i = 0
         var text = ""
-        var numP = $(".numP").val()
+        var numP = $("#numP").val()
         console.log(numP)
 
         while(numP > 0) {
@@ -50,8 +50,8 @@ $(document).ready(function() {
         return text
     }
 
-	$(".generate").click(function(){
+	$("#generate").click(function(){
         var birolipsum = generateText()
-        $(".birolipsum").val(birolipsum);
+        $("#birolipsum").val(birolipsum);
     })
 })
