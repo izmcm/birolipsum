@@ -5,7 +5,7 @@ Birolipsum é um gerador de Lorem Ipsum com citações do (infelizmente) preside
 #### Mas, antes de tudo, o que é Lorem Ipsum?
 "[...] lorem ipsum é um texto utilizado para preencher o espaço de texto em publicações (jornais, revistas, e sites) e testar aspectos visuais (cores, fontes etc.), com a finalidade de verificar o layout, a tipografia e formatação antes de utilizar conteúdo real." - [Wikipédia](https://pt.wikipedia.org/wiki/Lorem_ipsum)
 
-**Mas porque usar usar um lorem ipsum qualquer quando você pode militar com citações do presidente enquanto faz seu trabalho???**
+**Mas porque usar um lorem ipsum qualquer quando você pode militar com citações do presidente enquanto faz seu trabalho???**
 
 ## Como usar?
 A parte mais legal é que você não precisa instalar nada!
