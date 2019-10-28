@@ -31,6 +31,7 @@ Basta entrar em [Birolipsum](https://izmcm.github.io/birolipsum/), colocar a qua
 </table>
 
 e mais uma galera que contribuiu com PR's <3
+
 e mais outra galera que luta todo dia contra esse (des)governo <3
 
 ## Licença
