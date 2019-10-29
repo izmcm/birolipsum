@@ -91,15 +91,17 @@ blockquote:before {
 blockquote:not(:first-of-type) {
   margin-top: .5em;
 }
-blockquote p {
+blockquote textarea {
   color: #555;
   font-size: 12pt;
   line-height: 1.4;
   font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+  resize: none;
 }
 blockquote footer {
   margin-top: .5em;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 1%;
   color: #777;
   font-size: 12pt;
   text-align: left;
