@@ -2,8 +2,6 @@ $(document).ready(function() {
     let pSize = 500
     var quotes = []
 
-    // document.getElementById("quote")
-
     $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset/dataset.txt', function(data) {
         var lines = data.split("\n");
         for (var i = 0, len = lines.length; i < len; i++) {
@@ -57,4 +55,12 @@ $(document).ready(function() {
         $("#birolipsum").text(birolipsum);
         $(".quote").css("display", "block");
     })
+
+
+    $("#copyButton").click(function(){
+        $("#birolipsum").select();
+        document.execCommand('copy');
+
+        alert("Texto copiado com sucesso!")
+    });
 })
