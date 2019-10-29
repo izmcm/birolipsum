@@ -1,19 +1,135 @@
-p {
-	text-align: left;
+body{
+  color : #333333;
+  font-family: arial;
+  max-width: 60%;
+  margin : 0 auto;
+  padding : 0 16px;
+  display : flex;
+  flex-direction : column;
+  min-height : 100vh;
 }
 
-.container {
-  display: flex; /* or inline-flex */
+.main-content{
+  flex-grow: 1;
 }
 
-.vertical-center {
-  min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 90vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
+footer{
+  color : #888888;
+  border-top : 1px solid #eeeeee;
+  margin-top : 16px;
+  padding : 16px 0;
 }
 
-textarea {
-  resize: none;
+header{
+  margin-top : 16px;
+  margin-bottom : 48px;
+}
+
+h1{
+  font-size : 64px;
+  margin-bottom : 16px;
+}
+
+header a{
+  color : #888888;
+  margin-right : 16px;
+  text-decoration : none;
+}
+
+.portrait{
+  width : 250px;
+}
+
+input{
+  border  : 1px solid #cccccc;
+  padding : 8px; 
+}
+
+button{
+  cursor : pointer;
+  border : 1px solid #888888;
+  background: #888888;
+  color : white;
+  padding : 8px;
+}
+
+li{
+  padding: 0.3rem;
+}
+
+.author{
+  display: contents;
+}
+
+.avatar{
+  border-radius: 50%;
+  height: 7rem;
+  width: auto;
+}
+
+.logo{
+  height: 10rem;
+}
+
+.quote{
+  display: none;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 25% 70%;
+}
+
+blockquote {
+  margin: 0 auto;
+  padding: 1em;
+  border-left: 5px solid #999;
+}
+blockquote:before {
+  display: none;
+}
+blockquote:not(:first-of-type) {
+  margin-top: .5em;
+}
+blockquote p {
+  color: #555;
+  font-size: 12pt;
+  line-height: 1.4;
+  font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+}
+blockquote footer {
+  margin-top: .5em;
+  padding: 0;
+  color: #777;
+  font-size: 12pt;
+  text-align: left;
+  font-style: italic;
+}
+blockquote footer:before {
+  content: '— ';
+}
+blockquote:nth-of-type(odd) {
+  text-align: right;
+  border-left: none;
+  border-right: 5px solid #999;
+}
+blockquote:nth-of-type(odd) footer {
+  text-align: right;
+}
+blockquote:nth-of-type(odd) footer:before {
+  content: '';
+}
+blockquote:nth-of-type(odd) footer:after {
+  content: ' —';
+}
+@element 'blockquote' and (min-width: 300px) {
+  blockquote {
+    padding: 1em 20% 1em 1em;
+  }
+  blockquote p {
+    font-size: 14pt;
+  }
+  blockquote:nth-of-type(odd) {
+    padding: 1em 1em 1em 20%;
+  }
 }

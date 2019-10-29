@@ -6,31 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style/style.css">
         <script src="scripts/script.js"></script>
         <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
     </head>
     <body>
-        <div class="jumbotron vertical-center">
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col align-self-center">
-                    <center><img src="images/logo.png"></center>
-                    <h1 class="display-3">Birolipsum</h1>
+        <div class="main-content">
+            <header>
+                <h1>Birolipsum</h1>
+                
+                <div>
+                    <a href="./index.html">Gerador</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./ajudar.html">Contribuir</a>
                 </div>
-                <div class="col align-self-center">
-                    <div class="row">
-                        <div class="col align-self-right"><p>Parágrafos:</p></div>
-                        <div class="col align-self-left"><input type="number" class="form-control" id="numP" value= 2></div>
-                        <div class="col align-self-center"><button type="button" class="btn btn-dark" id="generate">Gerar</button></div>
-                    </div>
-                    <p>Resultado</p>
-                    <textarea class="form-control" rows="10" id="birolipsum"></textarea>        
+            </header>
+            <div class="grid">
+                <div>
+                    <img class="avatar logo" src="images/Lama-Bolsonaro.jpg" >
+                </div>
+                <div style="padding-top: 3rem; padding-left: 18rem;">
+                    <form action="" title="Paragráfos:">
+                        <label for="paragrafos">Parágrafos</label>
+                        <input type="number" name="paragrafos" style="width: 5rem;" class="form-control" id="numP" value= 2>
+                        <button type="button" id="generate">Gerar</button>
+                    </form>
                 </div>
             </div>
-        </div></div>
+            <blockquote class="quote">
+                <p><q id="birolipsum"></q></p>
+                <footer>Biroliro</footer>
+            </blockquote>
+        </div>
+        <footer>
+            <p>Made by Izabella Melo & Renata Faria</p>
+        </footer>
     </body>
-     <center><footer class="blockquote-footer">Made by Izabella Melo & Renata Faria</footer></center>
 </html>
 
