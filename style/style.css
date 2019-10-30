@@ -79,6 +79,12 @@ li {
   display: none;
 }
 
+#birolipsum:disabled {
+  background: #C9C9C9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .grid {
   display: flex;
   justify-content: space-between;
