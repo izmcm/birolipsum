@@ -1,109 +1,112 @@
-body{
-  color : #333333;
+body {
+  color: #333333;
   font-family: arial;
   max-width: 60%;
-  margin : 0 auto;
-  padding : 0 16px;
-  display : flex;
-  flex-direction : column;
-  min-height : 100vh;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.main-content{
+.main-content {
   flex-grow: 1;
 }
 
-footer{
-  color : #888888;
-  border-top : 1px solid #eeeeee;
-  margin-top : 16px;
-  padding : 16px 0;
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
 }
 
-header{
-  margin-top : 16px;
-  margin-bottom : 48px;
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
 }
 
-h1{
-  font-size : 64px;
-  margin-bottom : 16px;
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
 }
 
-header a{
-  color : #888888;
-  margin-right : 16px;
-  text-decoration : none;
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
 }
 
 header a:hover {
   opacity: 0.7;
 }
 
-.portrait{
-  width : 250px;
+.portrait {
+  width: 250px;
 }
 
-input{
-  border  : 1px solid #cccccc;
-  padding : 8px; 
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
 }
 
-button{
-  cursor : pointer;
-  border : 1px solid #888888;
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
   background: #888888;
-  color : white;
-  padding : 8px;
+  color: white;
+  padding: 8px;
 }
 
-li{
+li {
   padding: 0.3rem;
 }
 
-.author{
+.author {
   display: contents;
 }
 
-.avatar{
+.avatar {
   border-radius: 50%;
   height: 7rem;
   width: auto;
 }
 
-.logo{
+.logo {
   height: 10rem;
 }
 
-.quote{
+.quote {
   display: none;
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: 25% 70%;
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 blockquote {
   margin: 0 auto;
-  padding: 1em;
-  border-left: 5px solid #999;
+  padding: 1em 1em 1em 0;
+  border-right: 5px solid #999 !important;
 }
 blockquote:before {
   display: none;
 }
 blockquote:not(:first-of-type) {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 blockquote textarea {
   color: #555;
   font-size: 12pt;
   line-height: 1.4;
-  font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+  font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
+    "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   resize: none;
 }
 blockquote footer {
-  margin-top: .5em;
+  margin-top: 0.5em;
   padding-top: 0;
   padding-bottom: 1%;
   color: #777;
@@ -112,7 +115,7 @@ blockquote footer {
   font-style: italic;
 }
 blockquote footer:before {
-  content: '— ';
+  content: "— ";
 }
 blockquote:nth-of-type(odd) {
   text-align: right;
@@ -122,10 +125,10 @@ blockquote:nth-of-type(odd) footer {
   text-align: right;
 }
 blockquote:nth-of-type(odd) footer:before {
-  content: '';
+  content: "";
 }
 blockquote:nth-of-type(odd) footer:after {
-  content: ' —';
+  content: " —";
 }
 @element 'blockquote' and (min-width: 300px) {
   blockquote {
