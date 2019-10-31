@@ -28,39 +28,48 @@ $(document).ready(function() {
         shuffle(quotes)
 
         var i = 0
-        var text = ""
+        var text = [];
+        text = text.filter(function (el) {return el != null && el != "";});
         var numP = $("#numP").val()
-        console.log(numP)
-
+        
         while(numP > 0) {
             var paragraph = ""
             while(paragraph.length < pSize) {
                 paragraph += quotes[i] + " "
                 i++
-
+                
                 if(i >= quotes.length){
                     i = 0
                     shuffle(quotes)
                 }
             }
-            text += paragraph + "\n\n"
+            text.push(paragraph)
             numP--
         }
-
+        
         return text
     }
 
 	$("#generate").click(function(){
         var birolipsum = generateText()
-        $("#birolipsum").text(birolipsum);
+        birolipsum.map( p => {
+            $( "#birolipsum" ).append('<p class="birop">' + p + '</p>');
+        })
+        $("").text(birolipsum);
         $(".quote").css("display", "block");
     })
-
-
+    
+    
     $("#copyButton").click(function(){
-        $("#birolipsum").select();
-        document.execCommand('copy');
+        var items = $('.birop');
+        var text = "";        
+        var newItem = items.map(function(i, item) {
+            text += $(item).text() + "\n\n"
+            return +$(item).text();
+        }).get();
 
+        var dummy = $('<textarea class="display-none"></textarea>').val(text).appendTo('body').select()
+        document.execCommand('copy');
         alert("Texto copiado com sucesso!")
     });
 })

@@ -147,3 +147,17 @@ blockquote:nth-of-type(odd) footer:after {
     padding: 1em 1em 1em 20%;
   }
 }
+
+.birop {
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: text-top;
+}
+
+
+.display-none {
+  position: absolute;
+  top: -900000px;
+}
