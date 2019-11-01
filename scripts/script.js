@@ -2,20 +2,11 @@ $(document).ready(function() {
     let pSize = 500
     var quotes = []
 
-    // $("#twitter-widget-0").load(function(){
-    //     console.log("carregou");
-    //     document.getElementById("twitterButtonBase").style.display = 'none';
-    // });
     window.onload = function () { 
         window.setTimeout(function() {
             document.getElementById("twitterButtonBase").style.display = 'none';
         }, 50);
     }
-    
-    // $(window).load(function(){
-    //     console.log("did finish loading");
-    //     document.getElementById("twitterButtonBase").style.display = 'none';
-    // });
 
     $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset/dataset.txt', function(data) {
         var lines = data.split("\n");
@@ -69,8 +60,6 @@ $(document).ready(function() {
         var birolipsum = generateText()
         $("#birolipsum").text(birolipsum);
         $(".quote").css("display", "block");
-        // $("#twitterButton").css("display", "block");
-        // $("#twitter-widget-0").css("display", "block");
 
         // Avatar changer
         const biruNode = document.getElementById("Bolsoroleta");
