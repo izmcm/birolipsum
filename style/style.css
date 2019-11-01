@@ -25,6 +25,7 @@ header #selected {
 
 #containerBlock {
   display: inline;
+  text-align: right;
 }
 
 .button {
@@ -58,8 +59,16 @@ header a:hover {
   opacity: 0.7;
 }
 
+#twitter {
+  text-align: center;
+}
+
 .portrait {
   width: 250px;
+}
+
+#copyButton {
+  display: none;
 }
 
 input {
@@ -94,7 +103,7 @@ li {
 }
 
 .quote {
-  display: none;
+  display: block;
 }
 
 #birolipsum:disabled {
@@ -123,6 +132,7 @@ blockquote:not(:first-of-type) {
 }
 blockquote textarea {
   color: #555;
+  background-color: white;
   font-size: 12pt;
   line-height: 1.4;
   font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",

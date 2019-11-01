@@ -59,7 +59,7 @@ $(document).ready(function() {
 	$("#generate").click(function(){
         var birolipsum = generateText()
         $("#birolipsum").text(birolipsum);
-        $(".quote").css("display", "block");
+        $("#copyButton").css("display", "inline");
 
         // Avatar changer
         const biruNode = document.getElementById("Bolsoroleta");
@@ -90,7 +90,6 @@ $(document).ready(function() {
             document.getElementById("twitterButtonContainer").appendChild(cln);
         }
         
-        // console.log(document.getElementById("twitterButtonContainer"));
     })
 
 
