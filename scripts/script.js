@@ -71,7 +71,14 @@ $(document).ready(function() {
         $(".quote").css("display", "block");
         // $("#twitterButton").css("display", "block");
         // $("#twitter-widget-0").css("display", "block");
-        
+
+        // Avatar changer
+        const biruNode = document.getElementById("Bolsoroleta");
+
+        let biruLista = ["biru1","biru2","biru3","biru4"]
+        var rand = biruLista[Math.floor(Math.random() * biruLista.length)];
+        biruNode.src="Assets/" + rand + ".png"
+
         // Remove all child nodes
         const myNode = document.getElementById("twitterButtonContainer");
         while (myNode.firstChild) {
