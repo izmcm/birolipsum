@@ -2,6 +2,21 @@ $(document).ready(function() {
     let pSize = 500
     var quotes = []
 
+    // $("#twitter-widget-0").load(function(){
+    //     console.log("carregou");
+    //     document.getElementById("twitterButtonBase").style.display = 'none';
+    // });
+    window.onload = function () { 
+        window.setTimeout(function() {
+            document.getElementById("twitterButtonBase").style.display = 'none';
+        }, 50);
+    }
+    
+    // $(window).load(function(){
+    //     console.log("did finish loading");
+    //     document.getElementById("twitterButtonBase").style.display = 'none';
+    // });
+
     $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset/dataset.txt', function(data) {
         var lines = data.split("\n");
         for (var i = 0, len = lines.length; i < len; i++) {
@@ -54,6 +69,32 @@ $(document).ready(function() {
         var birolipsum = generateText()
         $("#birolipsum").text(birolipsum);
         $(".quote").css("display", "block");
+        // $("#twitterButton").css("display", "block");
+        // $("#twitter-widget-0").css("display", "block");
+        
+        // Remove all child nodes
+        const myNode = document.getElementById("twitterButtonContainer");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        // Get the node to clone
+        let itm = document.getElementById("twitterButtonBase").children;
+
+        // Copy the children of the node
+        for(let i = 0; i < itm.length; i++) {
+            let cln = itm[i].cloneNode(true);
+
+            if(cln.tagName === "IFRAME") {
+                let birobiro = birolipsum.slice(0, 241);
+                cln.src = "https://platform.twitter.com/widgets/tweet_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html#dnt=false&hashtags=birolipsum&id=twitter-widget-0&lang=en&original_referer=file%3A%2F%2F%2FUsers%2Fcaiogomes%2FDocuments%2Fprojects%2Fhacktoberfest%2Fbirolipsum%2Findex.html&size=m&text=" + birobiro + "...&time=1572552166093&type=share&url=https%3A%2F%2Fizmcm.github.io%2Fbirolipsum%2F"
+            }
+
+            // Append the cloned <li> element to <ul> with id="myList1"
+            document.getElementById("twitterButtonContainer").appendChild(cln);
+        }
+        
+        // console.log(document.getElementById("twitterButtonContainer"));
     })
 
 
@@ -63,4 +104,7 @@ $(document).ready(function() {
 
         alert("Texto copiado com sucesso!")
     });
-})
+});
+
+
+
