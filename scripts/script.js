@@ -86,7 +86,7 @@ $(document).ready(function() {
             let cln = itm[i].cloneNode(true);
 
             if(cln.tagName === "IFRAME") {
-                let birobiro = birolipsum.slice(1, 241);
+                let birobiro = birolipsum.slice(0, 241);
                 cln.src = "https://platform.twitter.com/widgets/tweet_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html#dnt=false&hashtags=birolipsum&id=twitter-widget-0&lang=en&original_referer=file%3A%2F%2F%2FUsers%2Fcaiogomes%2FDocuments%2Fprojects%2Fhacktoberfest%2Fbirolipsum%2Findex.html&size=m&text=" + birobiro + "...&time=1572552166093&type=share&url=https%3A%2F%2Fizmcm.github.io%2Fbirolipsum%2F"
             }
 
