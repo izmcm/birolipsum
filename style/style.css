@@ -9,6 +9,12 @@ body {
   min-height: 100vh;
 }
 
+
+header #selected {
+  color: black;
+  font-style: bold;
+}
+
 .main-content {
   flex-grow: 1;
 }
