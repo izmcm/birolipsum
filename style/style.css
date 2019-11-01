@@ -13,6 +13,19 @@ body {
   flex-grow: 1;
 }
 
+#twitterButtonBase {
+  display: inline;
+}
+
+#containerBlock {
+  display: inline;
+  text-align: right;
+}
+
+.button {
+  display: inline;
+}
+
 footer {
   color: #888888;
   border-top: 1px solid #eeeeee;

@@ -26,7 +26,7 @@
       </header>
       <div class="grid">
         <div>
-          <img class="avatar logo" src="images/Lama-Bolsonaro.jpg" />
+          <img class="avatar logo" id="Bolsoroleta" src="images/Lama-Bolsonaro.jpg" />
         </div>
         <div>
           <form action="" title="Paragráfos:">
@@ -37,7 +37,8 @@
               style="width: 5rem;"
               class="form-control"
               id="numP"
-              value="2"
+              value="1"
+              min="0"
             />
             <button type="button" id="generate">Gerar</button>
           </form>
@@ -47,10 +48,17 @@
         <textarea rows="8" style="width: 100%;" id="birolipsum" disabled></textarea>
         <footer>Biroliro</footer>
         <button type="button" id="copyButton">Copiar texto</button>
+        <div id="containerBlock">
+          <br/><br/>
+          <div id="twitterButtonContainer"></div>
+        </div>
       </blockquote>
       <div id="twitter">
         <a class="twitter-timeline" style="display: inline;" data-width="400" data-height="400" href="https://twitter.com/jairbolsonaro?ref_src=twsrc%5Etfw">Tweets by jairbolsonaro</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div id="twitterButtonBase">
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="hello my friend" data-url="https://izmcm.github.io/birolipsum/" data-hashtags="birolipsum" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
     <footer>
