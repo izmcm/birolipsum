@@ -5,7 +5,7 @@ $(document).ready(function() {
     window.onload = function () { 
         window.setTimeout(function() {
             document.getElementById("twitterButtonBase").style.display = 'none';
-        }, 50);
+        }, 10);
     }
 
     $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset/dataset.txt', function(data) {
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
         let biruLista = ["biru1","biru2","biru3","biru4"]
         var rand = biruLista[Math.floor(Math.random() * biruLista.length)];
-        biruNode.src="Assets/" + rand + ".png"
+        biruNode.src = "Assets/" + rand + ".png"
 
         // Remove all child nodes
         const myNode = document.getElementById("twitterButtonContainer");
