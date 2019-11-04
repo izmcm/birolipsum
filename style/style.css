@@ -1,12 +1,13 @@
 body {
-  color: #333333;
-  font-family: arial;
+  color: #d2cece;
+  font-family: "Montserrat", sans-serif;
   max-width: 60%;
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #492378;
 }
 
 img {
@@ -14,8 +15,9 @@ img {
 }
 
 header #selected {
-  color: black;
+  color: white;
   font-style: bold;
+  background-color: #8c43e6;
 }
 
 .main-content {
@@ -36,8 +38,7 @@ header #selected {
 }
 
 footer {
-  color: #888888;
-  border-top: 1px solid #eeeeee;
+  color: #b8b8b8;
   margin-top: 16px;
   padding: 16px 0;
 }
@@ -48,18 +49,22 @@ header {
 }
 
 h1 {
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   font-size: 64px;
   margin-bottom: 16px;
 }
 
 header a {
-  color: #505050;
-  margin-right: 16px;
+  color: #7638c2;
   text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 header a:hover {
-  opacity: 0.7;
+  background-color: #7638c2;
+  color: white;
 }
 
 .portrait {
@@ -71,16 +76,23 @@ header a:hover {
 }
 
 input {
-  border: 1px solid #cccccc;
   padding: 8px;
+  border-style: none;
 }
 
 button {
   cursor: pointer;
-  border: 1px solid #888888;
-  background: #888888;
+  border-style: none;
+  border-radius: 5px;
+  background: #7638c2;
   color: white;
-  padding: 8px;
+  padding: 6px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #8c43e6;
 }
 
 li {
@@ -97,8 +109,12 @@ figcaption {
 
 .avatar {
   border-radius: 50%;
+  border-style: none;
   height: 7rem;
   width: auto;
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
 }
 
 .logo {
@@ -141,12 +157,16 @@ blockquote textarea {
   font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
     "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   resize: none;
+  border-style: none;
+  -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
 }
 blockquote footer {
   margin-top: 0.5em;
   padding-top: 0;
   padding-bottom: 1%;
-  color: #777;
+  color: white;
   font-size: 12pt;
   text-align: left;
   font-style: italic;
@@ -167,14 +187,23 @@ blockquote:nth-of-type(odd) footer:before {
 blockquote:nth-of-type(odd) footer:after {
   content: " —";
 }
- 
+
+a,
+a:visited {
+  color: #d168ff;
+}
+
+a:hover {
+  color: #b850ff;
+}
+
 @media (max-width: 700px) {
   .avatar {
     border-radius: 50%;
     height: 5rem;
     width: auto;
   }
-  
+
   h1 {
     font-size: 44px;
     margin-bottom: 16px;
