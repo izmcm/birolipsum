@@ -1,6 +1,6 @@
 body {
   color: #333333;
-  font-family: arial;
+  font-family: "Montserrat", sans-serif;
   max-width: 60%;
   margin: 0 auto;
   padding: 0 16px;
@@ -81,6 +81,7 @@ button {
   background: #888888;
   color: white;
   padding: 8px;
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
