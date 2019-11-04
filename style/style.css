@@ -76,8 +76,8 @@ header a:hover {
 }
 
 input {
-  border: 1px solid #cccccc;
   padding: 8px;
+  border-style: none;
 }
 
 button {
@@ -147,6 +147,7 @@ blockquote textarea {
   font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
     "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   resize: none;
+  border-style: none;
 }
 blockquote footer {
   margin-top: 0.5em;
