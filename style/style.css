@@ -82,11 +82,17 @@ input {
 
 button {
   cursor: pointer;
-  border: 1px solid #888888;
-  background: #888888;
+  border-style: none;
+  border-radius: 5px;
+  background: #7638c2;
   color: white;
-  padding: 8px;
+  padding: 6px 10px;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #8c43e6;
 }
 
 li {
