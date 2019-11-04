@@ -184,7 +184,16 @@ blockquote:nth-of-type(odd) footer:before {
 blockquote:nth-of-type(odd) footer:after {
   content: " —";
 }
- 
+
+a,
+a:visited {
+  color: #d168ff;
+}
+
+a:hover {
+  color: #b850ff;
+}
+
 @media (max-width: 700px) {
   .avatar {
     border-radius: 50%;
