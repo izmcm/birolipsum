@@ -15,8 +15,9 @@ img {
 }
 
 header #selected {
-  color: black;
+  color: white;
   font-style: bold;
+  background-color: #8c43e6;
 }
 
 .main-content {
@@ -54,13 +55,15 @@ h1 {
 }
 
 header a {
-  color: #505050;
-  margin-right: 16px;
+  color: #7638c2;
   text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 header a:hover {
-  opacity: 0.7;
+  background-color: #7638c2;
+  color: white;
 }
 
 .portrait {
