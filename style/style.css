@@ -158,6 +158,9 @@ blockquote textarea {
     "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   resize: none;
   border-style: none;
+  -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
 }
 blockquote footer {
   margin-top: 0.5em;
@@ -200,7 +203,7 @@ a:hover {
     height: 5rem;
     width: auto;
   }
-  
+
   h1 {
     font-size: 44px;
     margin-bottom: 16px;
