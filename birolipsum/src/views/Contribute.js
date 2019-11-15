@@ -78,7 +78,7 @@ const Contribute = () => {
           </tbody>
         </table>
         <p>
-          e mais uma galera que contribuiu com PR's{" "}
+          e mais uma galera que contribuiu com PR's
           <span role="img" aria-label="heart emoji">
             &#129505;
           </span>

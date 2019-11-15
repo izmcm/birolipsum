@@ -16,6 +16,7 @@ const TextGenerator = () => {
     showAnimation,
     hiddenAnimation
   } = useTextGenerator();
+
   return (
     <>
       <div className="grid">
