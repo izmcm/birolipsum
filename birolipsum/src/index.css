@@ -1,3 +1,7 @@
+#root {
+  min-height: calc(100vh - 100px);
+}
+
 body {
   color: #d2cece;
   font-family: "Montserrat", sans-serif;
@@ -6,18 +10,11 @@ body {
   padding: 0 16px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background-color: #492378;
 }
 
 img {
   border: 1px solid #ddd;
-}
-
-header #selected {
-  color: white;
-  font-style: bold;
-  background-color: #8c43e6;
 }
 
 .main-content {
@@ -60,6 +57,13 @@ header a {
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
+  margin-right: 0.5%;
+}
+
+.menu a.chosen {
+  color: white;
+  font-style: bold;
+  background-color: #8c43e6;
 }
 
 header a:hover {
@@ -78,6 +82,7 @@ header a:hover {
 input {
   padding: 8px;
   border-style: none;
+  margin: 0 1.5%;
 }
 
 button {
@@ -125,7 +130,7 @@ figcaption {
   display: block;
 }
 
-#birolipsum:disabled {
+#birolipsum {
   background: #ffffff;
   padding: 20px;
   box-sizing: border-box;
@@ -141,7 +146,7 @@ figcaption {
 blockquote {
   margin: 0 auto;
   padding: 1em 1em 1em 0;
-  border-right: 5px solid #999 !important;
+  border-right: 5px solid #999;
 }
 blockquote:before {
   display: none;
@@ -158,6 +163,7 @@ blockquote textarea {
     "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   resize: none;
   border-style: none;
+
   -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
   box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
@@ -221,4 +227,8 @@ a:hover {
   footer {
     font-size: 80%;
   }
+}
+
+#sticky {
+  height: 50px;
 }

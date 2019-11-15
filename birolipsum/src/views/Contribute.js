@@ -1,51 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Birolipsum</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-      type="text/javascript"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="scripts/script.js"></script>
-    <link rel="shortcut icon" type="image/png" href="Assets/biru5.jpg" />
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
-  <body>
-    <div class="main-content">
-      <header>
-        <h1>Birolipsum</h1>
-        <div class="menu">
-          <a href="./index.html">Gerador</a>
-          <a href="./sobre.html">Sobre</a>
-          <a href="./ajudar.html" id="selected">Contribuir</a>
-        </div>
-      </header>
+import React from "react";
+
+const Contribute = () => {
+  return (
+    <div>
       <h2>Github!</h2>
-      <row>
+      <div>
         <a
-          class="github-button"
+          className="github-button"
           href="https://github.com/izmcm/birolipsum/fork"
           data-size="large"
           data-show-count="true"
           aria-label="Fork izmcm/birolipsum on GitHub"
-          >Fork</a
         >
+          Fork
+        </a>
         <a
-          class="github-button"
+          className="github-button"
           href="https://github.com/izmcm/birolipsum"
           data-size="large"
           data-show-count="true"
           aria-label="Star izmcm/birolipsum on GitHub"
-          >Star</a
         >
-      </row>
+          Star
+        </a>
+      </div>
       <h3>Pull Requests</h3>
       <ul>
         <li>
@@ -60,9 +38,7 @@
           super afim de consertar? Só dale!
         </li>
       </ul>
-      <h3>
-        Issue:
-      </h3>
+      <h3>Issue:</h3>
       <ul>
         <li>
           Viu algum problema ou tem alguma sugestão, mas não tá muito na vibe de
@@ -70,14 +46,14 @@
         </li>
       </ul>
       <h3>Quem fez?</h3>
-      <div class="author">
-        <table style="border: none;">
+      <div className="author">
+        <table style={{ border: "none" }}>
           <tbody>
             <tr>
               <td>
-                <figure style="margin:0%">
+                <figure style={{ margin: "0%" }}>
                   <img
-                    class="avatar"
+                    className="avatar"
                     src="https://avatars3.githubusercontent.com/u/27749679?s=400&v=4"
                     alt="Izabella Melo"
                   />
@@ -89,7 +65,7 @@
               <td>
                 <figure>
                   <img
-                    class="avatar"
+                    className="avatar"
                     src="https://avatars0.githubusercontent.com/u/18575717?s=400&v=4"
                     alt="Renata Faria"
                   />
@@ -101,15 +77,21 @@
             </tr>
           </tbody>
         </table>
-        <p>e mais uma galera que contribuiu com PR's &#129505;</p>
+        <p>
+          e mais uma galera que contribuiu com PR's{" "}
+          <span role="img" aria-label="heart emoji">
+            &#129505;
+          </span>
+        </p>
         <p>
           e mais outra galera que luta todo dia contra esse (des)governo
-          &#129505;
+          <span role="img" aria-label="heart emoji">
+            &#129505;
+          </span>
         </p>
       </div>
     </div>
-    <footer>
-      <p>Made by Izabella Melo & Renata Faria</p>
-    </footer>
-  </body>
-</html>
+  );
+};
+
+export default Contribute;
