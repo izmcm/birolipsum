@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { shuffle } from "../utils";
 let data = require("../data/dataset.json");
+let avatars = require("../data/avatars.json").imgs;
 
 const useTextGenerator = () => {
   const paragraphSize = 500;
@@ -31,24 +32,16 @@ const useTextGenerator = () => {
 
   useEffect(() => {
     if (textBlob !== "") {
-      handleImageChange();
+      handleImageChange(avatars);
     }
     return () => {};
   });
-
-  const handleValueLessThanZero = val => {
-    if (val < 0) {
-      return;
-    }
-  };
 
   const generateText = (quotes, paragraphNumber) => {
     shuffle(quotes);
     let i = 0;
     let text = "";
     let numP = Number(paragraphNumber);
-
-    handleValueLessThanZero();
 
     while (numP > 0) {
       let paragraph = "";
@@ -68,12 +61,9 @@ const useTextGenerator = () => {
     return text;
   };
 
-  const handleImageChange = () => {
-    if (textBlob !== "") {
-      let imgList = ["biru1", "biru2", "biru3", "biru4"];
-      var rand = imgList[Math.floor(Math.random() * imgList.length)];
-      avatar.current.src = `/img/${rand}.png`;
-    }
+  const handleImageChange = imgList => {
+    var rand = imgList[Math.floor(Math.random() * imgList.length)];
+    avatar.current.src = `/img/${rand}.png`;
   };
 
   const handleClick = e => {
@@ -89,14 +79,12 @@ const useTextGenerator = () => {
     textAreaRef.current.select();
     if (textAreaRef.current.value !== "") {
       try {
-        var successful = document.execCommand("copy");
-        var msg = successful ? "successful" : "unsuccessful";
-        console.log("Copying text command was " + msg);
+        document.execCommand("copy");
+        e.target.focus();
+        setsuccessfulCopy(true);
       } catch (err) {
         console.error("Fallback: Oops, unable to copy", err);
       }
-      e.target.focus();
-      setsuccessfulCopy(true);
     }
   };
 
