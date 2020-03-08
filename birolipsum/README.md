@@ -23,12 +23,12 @@ Basta entrar em [Birolipsum](https://izmcm.github.io/birolipsum/), colocar a qua
 
 ### Pull Requests:
 
-- A gente sabe que novas pérolas surgem o tempo todo e gostaríamos de manter o nosso [dataset](dataset.txt) atualizado. A forma mais fácil de contribuir é adicionando novas citações nele. Pula uma linha e dale a nova pérola do teu presidente, bença. Mas lembra que só citações verdadeiras serão aceitas.
-- Tem alguma ideia de feature que queria implementar ou problema que tá super afim de consertar? Só dale!
+* A gente sabe que novas pérolas surgem o tempo todo e gostaríamos de manter o nosso [dataset](dataset.txt) atualizado. A forma mais fácil de contribuir é adicionando novas citações nele. Pula uma linha e dale a nova pérola do teu presidente, bença. Mas lembra que só citações verdadeiras serão aceitas.
+* Tem alguma ideia de feature que queria implementar ou problema que tá super afim de consertar? Só dale!
 
 ### Issue:
 
-- Viu algum problema ou tem alguma sugestão, mas não tá muito na vibe de implementar? Abre uma issue que a gente vê isso pra tu!
+* Viu algum problema ou tem alguma sugestão, mas não tá muito na vibe de implementar? Abre uma issue que a gente vê isso pra tu!
 
 ## Quem fez?
 
