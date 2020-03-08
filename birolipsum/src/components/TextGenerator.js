@@ -37,11 +37,11 @@ const TextGenerator = () => {
         <button type="button" onClick={e => copyToClipboard(e)}>
           Copiar texto
         </button>
-        {/* <div id="containerBlock">
+        <div id="containerBlock">
           <br />
           <br />
           <div id="twitterButtonContainer"></div>
-        </div> */}
+        </div>
       </blockquote>
     </>
   );

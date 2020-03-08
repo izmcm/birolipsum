@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Birolipsum
 
-## Available Scripts
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-In the project directory, you can run:
+Birolipsum é um gerador de Lorem Ipsum com citações do (infelizmente) presidente do Brasil, Jair Bolsonaro (ou Biroliro para os íntimos).
 
-### `npm start`
+#### Mas, antes de tudo, o que é Lorem Ipsum?
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+"[...] lorem ipsum é um texto utilizado para preencher o espaço de texto em publicações (jornais, revistas, e sites) e testar aspectos visuais (cores, fontes etc.), com a finalidade de verificar o layout, a tipografia e formatação antes de utilizar conteúdo real." - [Wikipédia](https://pt.wikipedia.org/wiki/Lorem_ipsum)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**E porque usar um lorem ipsum qualquer quando você pode militar com citações do presidente enquanto faz seu trabalho???**
 
-### `npm test`
+## Como usar?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A parte mais legal é que você não precisa instalar nada!
 
-### `npm run build`
+Basta entrar em [Birolipsum](https://izmcm.github.io/birolipsum/), colocar a quantidade de parágrafos que você quer e clicar em **Gerar**.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Mais fácil de lidar que o governo, né?**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Quer ajudar?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pull Requests:
 
-### `npm run eject`
+- A gente sabe que novas pérolas surgem o tempo todo e gostaríamos de manter o nosso [dataset](dataset.txt) atualizado. A forma mais fácil de contribuir é adicionando novas citações nele. Pula uma linha e dale a nova pérola do teu presidente, bença. Mas lembra que só citações verdadeiras serão aceitas.
+- Tem alguma ideia de feature que queria implementar ou problema que tá super afim de consertar? Só dale!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Issue:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Viu algum problema ou tem alguma sugestão, mas não tá muito na vibe de implementar? Abre uma issue que a gente vê isso pra tu!
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Quem fez?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/izmcm"><img src="https://avatars2.githubusercontent.com/u/27749679?s=460&v=4" width="100px;" alt="Izabella Melo"/><br/><sub><b>Izabella Melo</b></sub></a></td>
+    <td align="center"><a href="https://github.com/xReee"><img src="https://avatars0.githubusercontent.com/u/18575717?s=400&v=4" width="100px;" alt="Renata Faria"/><br/><sub><b>Renata Faria</b></sub></a></td>
+  </tr>
+</table>
 
-## Learn More
+e mais uma galera que contribuiu com PR's <3
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+e mais outra galera que luta todo dia contra esse (des)governo <3
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licença
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[MIT](https://choosealicense.com/licenses/mit/)

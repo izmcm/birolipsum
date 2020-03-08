@@ -14,10 +14,6 @@ const Home = () => {
         <a
           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
           className="twitter-share-button"
-          data-size="large"
-          data-text="hello my friend"
-          data-url="https://izmcm.github.io/birolipsum/"
-          data-hashtags="birolipsum"
           data-show-count="false"
         >
           Tweet

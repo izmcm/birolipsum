@@ -28,8 +28,8 @@ const About = () => {
           A parte mais legal é que você não precisa instalar nada! Basta entrar
           em <a href="index.html">Gerador</a>, colocar a quantidade de
           parágrafos que você quer e clicar em <b>Gerar</b>.
-          <h4>Mais fácil de lidar que o governo, né?</h4>
         </p>
+        <h4>Mais fácil de lidar que o governo, né?</h4>
       </div>
     </>
   );
