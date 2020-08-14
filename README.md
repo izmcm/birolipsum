@@ -2,7 +2,7 @@
 # Birolipsum
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 Birolipsum é um gerador de Lorem Ipsum com citações do (infelizmente) presidente do Brasil, Jair Bolsonaro (ou Biroliro para os íntimos).
 
