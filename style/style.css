@@ -24,8 +24,12 @@ header #selected {
   flex-grow: 1;
 }
 
-#twitterButtonBase {
-  display: inline;
+#twitterButtonBase,
+#twitterButtonContainer {display: none;}
+#twitterButtonContainer {width: 100%;}
+#twitterButtonContainer #twitterIframe {
+  max-width: 61px;
+  max-height: 21px;
 }
 
 #containerBlock {

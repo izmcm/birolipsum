@@ -2,12 +2,6 @@ $(document).ready(function() {
     let pSize = 500
     var quotes = []
 
-    window.onload = function () { 
-        window.setTimeout(function() {
-            document.getElementById("twitterButtonBase").style.display = 'none';
-        }, 10);
-    }
-
     $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset/dataset.txt', function(data) {
         var lines = data.split("\n");
         for (var i = 0, len = lines.length; i < len; i++) {
@@ -56,7 +50,7 @@ $(document).ready(function() {
         return text
     }
 
-	$("#generate").click(function(){
+	$("#generate").click(function() {
         var birolipsum = generateText()
         $("#birolipsum").text(birolipsum);
         $("#copyButton").css("display", "inline");
@@ -68,30 +62,12 @@ $(document).ready(function() {
         var rand = biruLista[Math.floor(Math.random() * biruLista.length)];
         biruNode.src = "Assets/" + rand + ".png"
 
-        // Remove all child nodes
-        const myNode = document.getElementById("twitterButtonContainer");
-        while (myNode.firstChild) {
-            myNode.removeChild(myNode.firstChild);
-        }
-
-        // Get the node to clone
-        let itm = document.getElementById("twitterButtonBase").children;
-
-        // Copy the children of the node
-        for(let i = 0; i < itm.length; i++) {
-            let cln = itm[i].cloneNode(true);
-
-            if(cln.tagName === "IFRAME") {
-                let birobiro = birolipsum.slice(0, 241);
-                cln.src = "https://platform.twitter.com/widgets/tweet_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html#dnt=false&hashtags=birolipsum&id=twitter-widget-0&lang=en&original_referer=file%3A%2F%2F%2FUsers%2Fcaiogomes%2FDocuments%2Fprojects%2Fhacktoberfest%2Fbirolipsum%2Findex.html&size=m&text=" + birobiro + "...&time=1572552166093&type=share&url=https%3A%2F%2Fizmcm.github.io%2Fbirolipsum%2F"
-            }
-
-            // Append the cloned <li> element to <ul> with id="myList1"
-            document.getElementById("twitterButtonContainer").appendChild(cln);
-        }
-        
+        let birobiro = birolipsum.slice(0, 240);
+        $('#twitterButtonContainer')
+        .css('display', 'block')
+        .html("<iframe id='twitterIframe' allowtransparency='true' frameborder='0' scrolling='no' src='https://platform.twitter.com/widgets/tweet_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html#dnt=false&hashtags=birolipsum&id=twitter-widget-0&lang=en&original_referer=file%3A%2F%2F%2FUsers%2Fcaiogomes%2FDocuments%2Fprojects%2Fhacktoberfest%2Fbirolipsum%2Findex.html&size=m&text=" + birobiro + "...&time=1572552166093&type=share&url=https%3A%2F%2Fizmcm.github.io%2Fbirolipsum%2F'></iframe>");
+        twttr.widgets.load();
     })
-
 
     $("#copyButton").click(function(){
         $("#birolipsum").select();
