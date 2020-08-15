@@ -1,4 +1,8 @@
+
 # Birolipsum
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 Birolipsum é um gerador de Lorem Ipsum com citações do (infelizmente) presidente do Brasil, Jair Bolsonaro (ou Biroliro para os íntimos).
 
@@ -16,7 +20,7 @@ Basta entrar em [Birolipsum](https://izmcm.github.io/birolipsum/), colocar a qua
 
 ## Quer ajudar?
 ### Pull Requests:
-* A gente sabe que novas pérolas surgem o tempo todo e gostaríamos de manter o nosso [dataset](dataset.txt) atualizado. A forma mais fácil de contribuir é adicionando novas citações nele. Pula uma linha e dale a nova pérola do teu presidente, bença. Mas lembra que só citações verdadeiras serão aceitas.
+* A gente sabe que novas pérolas surgem o tempo todo e gostaríamos de manter o nosso [dataset](dataset/dataset.txt) atualizado. A forma mais fácil de contribuir é adicionando novas citações nele. Pula uma linha e dale a nova pérola do teu presidente, bença. Mas lembra que só citações verdadeiras serão aceitas.
 * Tem alguma ideia de feature que queria implementar ou problema que tá super afim de consertar? Só dale! 
 
 ### Issue:
