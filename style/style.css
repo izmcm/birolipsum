@@ -112,6 +112,7 @@ figcaption {
 }
 
 .avatar {
+  float: right;
   border-radius: 50%;
   border-style: none;
   height: 7rem;
