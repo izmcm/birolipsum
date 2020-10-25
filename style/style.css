@@ -1,5 +1,13 @@
+:root {
+    --bg-color: #dfdfdf;
+    --title-color: #000;
+    --button-main-color: #B60000;
+    --button-main-hover-color: #dd7575;
+    --link-main-color: #000;
+    --link-main-hover-color: #fff;
+}
+
 body {
-  color: #d2cece;
   font-family: "Montserrat", sans-serif;
   max-width: 60%;
   margin: 0 auto;
@@ -7,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #492378;
+  background-color: var(--bg-color);
 }
 
 img {
@@ -17,7 +25,7 @@ img {
 header #selected {
   color: white;
   font-style: bold;
-  background-color: #8c43e6;
+  background-color: var(--button-main-color);
 }
 
 .main-content {
@@ -53,21 +61,20 @@ header {
 }
 
 h1 {
-  color: white;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  color: var(--title-color);
   font-size: 64px;
   margin-bottom: 16px;
 }
 
 header a {
-  color: #7638c2;
+  color: var(--button-main-hover-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
 }
 
 header a:hover {
-  background-color: #7638c2;
+  background-color: var(--button-main-hover-color);
   color: white;
 }
 
@@ -88,7 +95,7 @@ button {
   cursor: pointer;
   border-style: none;
   border-radius: 5px;
-  background: #7638c2;
+  background: var(--button-main-color);
   color: white;
   padding: 6px 10px;
   font-family: "Montserrat", sans-serif;
@@ -96,7 +103,7 @@ button {
 }
 
 button:hover {
-  background: #8c43e6;
+  background: var(--button-main-hover-color);
 }
 
 li {
@@ -117,9 +124,6 @@ figcaption {
   border-style: none;
   height: 7rem;
   width: auto;
-  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
-  -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
-  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
 }
 
 .logo {
@@ -133,7 +137,6 @@ figcaption {
 #birolipsum:disabled {
   background: #ffffff;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .grid {
@@ -146,7 +149,6 @@ figcaption {
 blockquote {
   margin: 0 auto;
   padding: 1em 1em 1em 0;
-  border-right: 5px solid #999 !important;
 }
 blockquote:before {
   display: none;
@@ -162,10 +164,8 @@ blockquote textarea {
   font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
     "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   resize: none;
-  border-style: none;
-  -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
-  box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
+  border-style: groove;
+  border-width: 2pt;
 }
 blockquote footer {
   margin-top: 0.5em;
@@ -195,11 +195,11 @@ blockquote:nth-of-type(odd) footer:after {
 
 a,
 a:visited {
-  color: #d168ff;
+  color: var(--link-main-color);
 }
 
 a:hover {
-  color: #b850ff;
+  color: var(--link-main-hover-color);
 }
 
 @media (max-width: 700px) {
