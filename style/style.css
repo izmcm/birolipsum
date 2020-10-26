@@ -1,5 +1,14 @@
+:root {
+    --bg-color: #dfdfdf;
+    --main-text-color: #000;
+    --button-main-color: #B60000;
+    --button-main-hover-color: #dd7575;
+    --link-main-color: #000;
+    --link-main-hover-color: #fff;
+    --secondary-bg-color: #fff;
+  }
+
 body {
-  color: #d2cece;
   font-family: "Montserrat", sans-serif;
   max-width: 60%;
   margin: 0 auto;
@@ -7,21 +16,22 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #492378;
-}
-
-img {
-  border: 1px solid #ddd;
+  background-color: var(--bg-color);
 }
 
 header #selected {
-  color: white;
+  color: var(--secondary-bg-color);
   font-style: bold;
-  background-color: #8c43e6;
+  background-color: var(--button-main-color);
 }
 
 .main-content {
   flex-grow: 1;
+}
+
+#paragraphs {
+  padding-bottom: 1em;
+  padding-top: 3em;
 }
 
 #twitterButtonBase,
@@ -34,7 +44,6 @@ header #selected {
 
 #containerBlock {
   display: inline;
-  text-align: right;
 }
 
 .button {
@@ -42,7 +51,7 @@ header #selected {
 }
 
 footer {
-  color: #b8b8b8;
+  color:var(--main-text-color);
   margin-top: 16px;
   padding: 16px 0;
 }
@@ -53,22 +62,21 @@ header {
 }
 
 h1 {
-  color: white;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  color: var(--title-color);
   font-size: 64px;
   margin-bottom: 16px;
 }
 
 header a {
-  color: #7638c2;
+  color: var(--button-main-hover-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
 }
 
 header a:hover {
-  background-color: #7638c2;
-  color: white;
+  background-color: var(--button-main-hover-color);
+  color: var(--secondary-bg-color);
 }
 
 .portrait {
@@ -88,15 +96,15 @@ button {
   cursor: pointer;
   border-style: none;
   border-radius: 5px;
-  background: #7638c2;
-  color: white;
+  background: var(--button-main-color);
+  color: var(--secondary-bg-color);
   padding: 6px 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
 button:hover {
-  background: #8c43e6;
+  background: var(--button-main-hover-color);
 }
 
 li {
@@ -112,13 +120,11 @@ figcaption {
 }
 
 .avatar {
+  float: right;
   border-radius: 50%;
   border-style: none;
   height: 7rem;
   width: auto;
-  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
-  -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
-  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.48);
 }
 
 .logo {
@@ -130,9 +136,8 @@ figcaption {
 }
 
 #birolipsum:disabled {
-  background: #ffffff;
-  padding: 20px;
-  box-sizing: border-box;
+  background: var(--secondary-bg-color);
+  padding: 10px;
 }
 
 .grid {
@@ -145,60 +150,63 @@ figcaption {
 blockquote {
   margin: 0 auto;
   padding: 1em 1em 1em 0;
-  border-right: 5px solid #999 !important;
 }
+
 blockquote:before {
   display: none;
 }
+
 blockquote:not(:first-of-type) {
   margin-top: 0.5em;
 }
+
 blockquote textarea {
-  color: #555;
-  background-color: white;
+  background-color: var(--secondary-bg-color);
   font-size: 12pt;
   line-height: 1.4;
   font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
     "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   resize: none;
-  border-style: none;
-  -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
-  box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
+  border-style: groove;
+  border-width: 2pt;
 }
 blockquote footer {
   margin-top: 0.5em;
   padding-top: 0;
   padding-bottom: 1%;
-  color: white;
+  color: var(--secondary-bg-color);
   font-size: 12pt;
   text-align: left;
   font-style: italic;
 }
+
 blockquote footer:before {
   content: "— ";
 }
+
 blockquote:nth-of-type(odd) {
-  text-align: right;
   border-left: none;
 }
+
 blockquote:nth-of-type(odd) footer {
-  text-align: right;
+  color: var(--main-text-color);
 }
+
 blockquote:nth-of-type(odd) footer:before {
-  content: "";
+  content: "— ";
 }
+
 blockquote:nth-of-type(odd) footer:after {
-  content: " —";
+  content: "";
 }
 
 a,
 a:visited {
-  color: #d168ff;
+  color: var(--link-main-color);
 }
 
 a:hover {
-  color: #b850ff;
+  color: var(--link-main-hover-color);
 }
 
 @media (max-width: 700px) {
@@ -218,11 +226,15 @@ a:hover {
     margin-bottom: 16px;
   }
 
-  form {
-    padding-left: 20%;
-  }
-
   footer {
     font-size: 80%;
+  }
+
+  img {
+    display: none;
+  }
+
+  #paragraphs {
+    padding-right: 0;
   }
 }
