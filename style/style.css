@@ -1,11 +1,12 @@
 :root {
     --bg-color: #dfdfdf;
-    --title-color: #000;
+    --main-text-color: #000;
     --button-main-color: #B60000;
     --button-main-hover-color: #dd7575;
     --link-main-color: #000;
     --link-main-hover-color: #fff;
-}
+    --secondary-bg-color: #fff;
+  }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -18,18 +19,19 @@ body {
   background-color: var(--bg-color);
 }
 
-img {
-  border: 1px solid #ddd;
-}
-
 header #selected {
-  color: white;
+  color: var(--secondary-bg-color);
   font-style: bold;
   background-color: var(--button-main-color);
 }
 
 .main-content {
   flex-grow: 1;
+}
+
+#paragraphs {
+  padding-bottom: 1em;
+  padding-top: 3em;
 }
 
 #twitterButtonBase,
@@ -42,7 +44,6 @@ header #selected {
 
 #containerBlock {
   display: inline;
-  text-align: right;
 }
 
 .button {
@@ -50,7 +51,7 @@ header #selected {
 }
 
 footer {
-  color: #b8b8b8;
+  color:var(--main-text-color);
   margin-top: 16px;
   padding: 16px 0;
 }
@@ -75,7 +76,7 @@ header a {
 
 header a:hover {
   background-color: var(--button-main-hover-color);
-  color: white;
+  color: var(--secondary-bg-color);
 }
 
 .portrait {
@@ -96,7 +97,7 @@ button {
   border-style: none;
   border-radius: 5px;
   background: var(--button-main-color);
-  color: white;
+  color: var(--secondary-bg-color);
   padding: 6px 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -135,8 +136,8 @@ figcaption {
 }
 
 #birolipsum:disabled {
-  background: #ffffff;
-  padding: 20px;
+  background: var(--secondary-bg-color);
+  padding: 10px;
 }
 
 .grid {
@@ -150,15 +151,17 @@ blockquote {
   margin: 0 auto;
   padding: 1em 1em 1em 0;
 }
+
 blockquote:before {
   display: none;
 }
+
 blockquote:not(:first-of-type) {
   margin-top: 0.5em;
 }
+
 blockquote textarea {
-  color: #555;
-  background-color: white;
+  background-color: var(--secondary-bg-color);
   font-size: 12pt;
   line-height: 1.4;
   font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
@@ -171,26 +174,30 @@ blockquote footer {
   margin-top: 0.5em;
   padding-top: 0;
   padding-bottom: 1%;
-  color: white;
+  color: var(--secondary-bg-color);
   font-size: 12pt;
   text-align: left;
   font-style: italic;
 }
+
 blockquote footer:before {
   content: "— ";
 }
+
 blockquote:nth-of-type(odd) {
-  text-align: right;
   border-left: none;
 }
+
 blockquote:nth-of-type(odd) footer {
-  text-align: right;
+  color: var(--main-text-color);
 }
+
 blockquote:nth-of-type(odd) footer:before {
-  content: "";
+  content: "— ";
 }
+
 blockquote:nth-of-type(odd) footer:after {
-  content: " —";
+  content: "";
 }
 
 a,
@@ -219,11 +226,15 @@ a:hover {
     margin-bottom: 16px;
   }
 
-  form {
-    padding-left: 20%;
-  }
-
   footer {
     font-size: 80%;
+  }
+
+  img {
+    display: none;
+  }
+
+  #paragraphs {
+    padding-right: 0;
   }
 }
