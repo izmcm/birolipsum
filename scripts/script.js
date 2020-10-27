@@ -2,6 +2,9 @@ $(document).ready(function() {
     let pSize = 500
     var quotes = []
 
+
+
+
     $.get('https://raw.githubusercontent.com/izmcm/birolipsum/master/dataset/dataset.txt', function(data) {
         var lines = data.split("\n");
         for (var i = 0, len = lines.length; i < len; i++) {
@@ -49,6 +52,24 @@ $(document).ready(function() {
 
         return text
     }
+
+    $('#dark-mode-enabled').click(function() {
+        if(this.checked === true) {
+            document.documentElement.style.setProperty('--bg-color', '#2d2c2c');
+            document.documentElement.style.setProperty('--title-color', '#fff');
+            document.documentElement.style.setProperty('--button-main-color', '#c10303');
+            document.documentElement.style.setProperty('--link-main-color', '#fff');
+            document.documentElement.style.setProperty('--link-main-hover-color', '#000');
+            document.documentElement.style.setProperty('--text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--bg-color', '#dfdfdf');
+            document.documentElement.style.setProperty('--title-color', '#2d2c2c');
+            document.documentElement.style.setProperty('--button-main-color', '#B60000');
+            document.documentElement.style.setProperty('--link-main-color', '#000');
+            document.documentElement.style.setProperty('--link-main-hover-color', '#fff');
+            document.documentElement.style.setProperty('--text-color', '#000');
+        }
+    });
 
 	$("#generate").click(function() {
         var birolipsum = generateText()
