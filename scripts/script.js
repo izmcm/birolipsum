@@ -60,14 +60,14 @@ $(document).ready(function() {
             document.documentElement.style.setProperty('--button-main-color', '#c10303');
             document.documentElement.style.setProperty('--link-main-color', '#fff');
             document.documentElement.style.setProperty('--link-main-hover-color', '#000');
-            document.documentElement.style.setProperty('--text-color', '#fff');
+            document.documentElement.style.setProperty('--main-text-color', '#fff');
         } else {
             document.documentElement.style.setProperty('--bg-color', '#dfdfdf');
             document.documentElement.style.setProperty('--title-color', '#2d2c2c');
             document.documentElement.style.setProperty('--button-main-color', '#B60000');
             document.documentElement.style.setProperty('--link-main-color', '#000');
             document.documentElement.style.setProperty('--link-main-hover-color', '#fff');
-            document.documentElement.style.setProperty('--text-color', '#000');
+            document.documentElement.style.setProperty('--main-text-color', '#000');
         }
     });
 
